@@ -128,7 +128,7 @@ dnf install -y mongodb-mongosh
 Load Schema
 
 ```
-mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
+mongosh --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
 ```
 
 **NOTE: You need to update catalogue server ip address in frontend configuration. Configuration file is /etc/nginx/default.d/roboshop.conf**
