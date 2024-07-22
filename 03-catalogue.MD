@@ -9,7 +9,7 @@ Install NodeJS, By default NodeJS 10 is available, We would like to enable 18 ve
 
 ```
 dnf module disable nodejs -y
-dnf module enable nodejs:18 -y
+dnf module enable nodejs:20 -y
 ```
 
 Install NodeJS
