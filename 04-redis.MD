@@ -13,7 +13,7 @@ Usually Redis opens the port only to localhost(127.0.0.1), meaning this service 
 Update listen address from 127.0.0.1 to 0.0.0.0 in /etc/redis.conf & /etc/redis/redis.conf
 
 ```
-vim /etc/redis.conf
+vim /etc/redis/redis.conf
 ```
 
 Start & Enable Redis Service
