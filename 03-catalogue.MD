@@ -114,11 +114,12 @@ vim /etc/yum.repos.d/mongo.repo
 ```
 
 ```
-[mongodb-org-4.2]
+[mongodb-org-7.0]
 name=MongoDB Repository
-baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.2/x86_64/
-gpgcheck=0
+baseurl=https://repo.mongodb.org/yum/redhat/9/mongodb-org/7.0/x86_64/
+gpgcheck=1
 enabled=1
+gpgkey=https://pgp.mongodb.com/server-7.0.asc
 ```
 ```
 dnf install mongodb-org-shell -y
