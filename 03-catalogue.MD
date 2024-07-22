@@ -122,7 +122,7 @@ enabled=1
 gpgkey=https://pgp.mongodb.com/server-7.0.asc
 ```
 ```
-dnf install mongodb-org-shell -y
+dnf install -y mongodb-mongosh
 ```
 
 Load Schema
