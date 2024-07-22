@@ -9,7 +9,7 @@ Install NodeJS, By default NodeJS 10 is available, We would like to enable 18 ve
 
 ```
 dnf module disable nodejs -y
-dnf module enable nodejs:18 -y
+dnf module enable nodejs:20 -y
 ```
 
 Install NodeJS
@@ -105,20 +105,21 @@ vim /etc/yum.repos.d/mongo.repo
 ```
 
 ```
-[mongodb-org-4.2]
+[mongodb-org-7.0]
 name=MongoDB Repository
-baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.2/x86_64/
-gpgcheck=0
+baseurl=https://repo.mongodb.org/yum/redhat/9/mongodb-org/7.0/x86_64/
+gpgcheck=1
 enabled=1
+gpgkey=https://pgp.mongodb.com/server-7.0.asc
 ```
 ```
-dnf install mongodb-org-shell -y
+dnf install mongodb-mongosh -y
 ```
 
 Load Schema
 
 ```
-mongo --host MONGODB-SERVER-IPADDRESS </app/schema/user.js
+mongosh --host MONGODB-SERVER-IPADDRESS </app/schema/user.js
 ```
 
 
