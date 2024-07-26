@@ -5,7 +5,7 @@ This service is responsible for payments in RoboShop e-commerce app. This servic
 Install Python 3.6
 
 ```
-dnf install python3.12 gcc python3-devel -y
+dnf install python3.11 gcc python3-devel -y
 ```
 
 Configure the application.
@@ -45,7 +45,7 @@ cd /app
 ```
 
 ```
-pip3.6 install -r requirements.txt
+pip3.11 install -r requirements.txt
 ```
 
 We need to setup a new service in systemd so systemctl can manage this service
