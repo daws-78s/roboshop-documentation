@@ -55,7 +55,7 @@ We need to setup a new service in systemd so systemctl can manage this service
 Setup SystemD Shipping Service
 
 ```
-/etc/systemd/system/shipping.service
+vim /etc/systemd/system/shipping.service
 ```
 
 ```
@@ -101,7 +101,13 @@ dnf install mysql -y
 Load Schema
 
 ```
-mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pRoboShop@1 < /app/schema/shipping.sql 
+mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pRoboShop@1 < /app/db/schema.sql
+```
+```
+mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pRoboShop@1 < /app/db/app-user.sql 
+```
+```
+mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pRoboShop@1 < /app/db/master-data.sql
 ```
 
 This service needs a restart because it is dependent on schema, After loading schema only it will work as expected, Hence we are restarting this service. This

@@ -26,5 +26,5 @@ mysql_secure_installation --set-root-pass RoboShop@1
 You can check the new password working or not using the following command in MySQL.
 
 ```
-mysql -uroot -pRoboShop@1
+mysql
 ```
